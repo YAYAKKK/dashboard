@@ -13,7 +13,7 @@ with st.sidebar:
 # Membuat fungsi untuk dashboard produk terlaris dan terburuk
 def best_worst_dashboard(df):
     frameCatt = df.groupby("product_category_name_english")["order_id"].count().reset_index(name="orders")
-
+#
     
     fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(24, 12))
 
